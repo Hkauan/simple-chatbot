@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot by harry</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="chat-container">
+        <div id="chat-icon" onclick="toggleChatWindow()">
+            <!-- Ícone SVG para o chat -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle">
+                <path d="M21 12.5a9 9 0 1 0-18 0 9 9 0 0 0 8 8.5v-3.5H9a2 2 0 0 1-2-2v-1a2 2 0 0 1 2-2h2v-1.5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2V10h2a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-2v3.5a9 9 0 0 0 8-8.5z"></path>
+            </svg>
+        </div>
+        <br>
+        <div id="chat-window">
+            <div id="chat-messages"></div>
+            <div id="chat-input">
+                <input type="text" id="user-input" placeholder="Digite sua mensagem..." onkeydown="handleEnter(event)">
+                <button onclick="sendMessage()">Enviar</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
